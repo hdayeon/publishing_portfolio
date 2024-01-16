@@ -1,0 +1,102 @@
+@charset "utf-8";
+#wrap{width:100%; min-width:320px;}
+
+/* 헤더영역 */
+#header{width:100%; height:50px; background:#fff; position:relative;}
+.logo{margin-left:15px;}
+.logo a{display:block; width:140px; height:50px; background-image:url(../img/neo_logo.png); text-indent:-9999px;
+    background-repeat:no-repeat; background-size:140px auto; background-position:center;}
+
+.btnMenu{display:block; width:50px; height:50px; background-image:url(../img/btnMenu.png); text-indent:-9999px;
+    background-repeat:no-repeat; background-size:50px; position:absolute; top:0; right:0;}
+
+/* 모바일 사이드 메뉴 */
+#side{width:260px; height:100%; background:#fff; position:fixed; top:0; right:-260px; z-index:600;}
+
+.gnb{padding-top:50px;}
+.gnb li .m{display:block; font-size:14px; font-weight:bold; padding:15px 20px;
+background-image:url(../img/more.png); background-repeat:no-repeat; background-position:right 20px center;}
+.gnb li .m.on{background-color:#fff; color:#101820; background-image:url(../img/more_off.png);}
+
+.gnb li .sub{display:none;}
+.gnb li .sub li a{display:block; padding:15px 30px; background:#eee;}
+
+/* 닫기 */
+.close.icon{display:block; color:#101820; position:absolute; top:0; right:0; width:50px; height:50px; text-indent:-9999px;}
+  
+.close.icon:before,
+.close.icon:after{content: ''; display:block; position:absolute; top:23px; left:12px; width:28px; height:2px; background:#101820;}
+.close.icon:before{-webkit-transform: rotate(-45deg); transform: rotate(-45deg);}
+.close.icon:after{-webkit-transform: rotate(45deg); transform: rotate(45deg);}  
+
+/* 검정배경 */
+.blackBg{width:100%; height:100%; background:#000; opacity:0.8; position:fixed; top:0; left:0; z-index:500; display:none;}
+
+
+/* 메인비주얼 영역 */
+#mainVisual{position:relative;}
+#mainVisual img{width:100%; height:auto;}
+#mainVisual .text{color:#fff; position:absolute; top:30%; left:3%; font-weight:300; font-size:2.4vw; line-height:1.2em; 
+    text-shadow:3px 3px 10px #000;}
+#mainVisual .text strong{display:block; font-size:5.2vw; line-height:1.1em; margin-bottom:10px;}
+
+/* 컨테이너  본문영역 */
+#container{}
+
+/* cont1 */
+.cont1{width:100%;}
+
+/* cera,mle 공통값 */
+.cont1>div{position:relative;}
+.cont1>div .photo img{width:100%; height:auto;}
+.cont1>div .text{position:absolute; top:50%; color:#fff; transform:translateY(-50%);
+    font-size:5.6vw; text-shadow:5px 3px 10px #000;}
+.cont1>div .text span{display:block; font-size:4vw;}
+.cont1>div .icon{width:20%; height:150px; position:absolute; top:50%; text-indent:-9999px; transform:translateY(-50%);}
+/* cera,mle 개별값 */
+.cont1 .cera .text{left:17%; line-height:1em;}
+.cont1 .cera .icon{right:17%; background:url(../img/cont1cera.png) no-repeat center/100% auto;}
+
+.cont1 .mle .text{right:17%; line-height:0.8em; text-align:right;}
+.cont1 .mle .icon{left:17%; background:url(../img/cont1mle.png) no-repeat center/100% auto;}
+
+/* cont2 */
+.cont2{margin:2% 3% 3%; display:flex;}
+.cont2 .video{width:67%; height:auto;}
+.cont2 .vTit{width:33%; height:101px; background:linear-gradient(90deg, #fff, #bbb); padding-top:80px;}
+.cont2 .vTit h2{font-size:4.8vw; text-align:center; font-weight:500;}
+
+/* stock (cont3) */
+.stock{width:84%; height:auto; background:#ddd; margin:0 3% 5%; padding:3.6% 5% 2%;}
+.stock h2{text-align:center; margin-bottom:6%; font-size:4.8vw}
+
+.stock dl{float:left; width:43%; margin-right:6%; margin-bottom:5%; font-size:4vw;}
+.stock dl:nth-child(odd){margin-right:0; float:right;}
+.stock dl:after{content:""; display:block; clear:none;}
+.stock dl dt{float:left; color:#6d6d6d;}
+.stock dl dd{float:right;}
+.stock dl .up{color:#005fbd;}
+
+/* brand (cont4) */
+.brand{width:100%; padding-bottom:8px;}
+.brand .tit{width:100%; height:25px; margin-bottom:9px;}
+.brand .tit h2{display:block; width:16%; text-align:center; float:left; font-size:4.8vw}
+.brand .tit>p{width:42%; height:1px; background:#111; margin-top:8px;}
+.brand .tit .left{float:left;}
+.brand .tit .right{float:right;}
+
+.brand ul{height:77px; margin:0 8%; display:flex; flex-wrap:wrap; justify-content:space-around;}
+.brand li{width:30%;}
+.brand li a{display:block;}
+.brand li a img{width:100%;}
+
+/* 푸터영역 */
+#footer{background:#101820; color:#fff; padding:24px; text-align:center; font-weight:300;}
+.fmenu{margin-bottom:20px;}
+.fmenu li{display:inline-block;}
+.fmenu li:after{content:""; display:inline-block; width:1px; height:12px; background:#eee; margin:0 5px;}
+.fmenu li:last-child:after{display:none;}
+.fmenu li a{color:#fff;}
+.finfo{margin-bottom:14px;}
+.finfo span{display:block;}
+.copy{color:#bbb;}

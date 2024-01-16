@@ -1,0 +1,45 @@
+@charset "utf-8";
+#wrap{}
+
+/* 헤더 영역 */
+#header{width:100%; height:100px; background:#fff; box-shadow:5px 3px 10px rgba(0,0,0,0.2);}
+#headerIn{width:980px; height:100px; background:#fff; margin:0 auto; position:relative;}
+
+.logo{position:absolute; bottom:20px; left:0;}
+
+/* 메인메뉴 */
+.gnb{position:absolute; top:46px; right:0; height:40px; overflow:hidden;}
+
+.gnb .d1{float:left; margin-right:26px; position:relative;}
+.gnb .d1:last-child{margin-right:0;}
+.gnb .d1:hover .m{color:#e00719;}
+.gnb .d1 .m.on{color:#e00719;}
+
+/* 메인메뉴글자 */
+.gnb .d1 .m{display:block; font-size:20px; padding:11px 20px; color:#101820; font-size:18px; border-bottom:1px solid #111;}
+.gnb .all a{display:block; width:22px; height:40px; text-indent:-9999px; background:url(../images/gnbIcon.png) no-repeat center;}
+/* 서브메뉴 */
+.gnb .d1 .sub{width:160px; height:200px; padding:15px 0 15px 20px; position:absolute; top:54px; left:0; z-index:300;}
+.gnb .d1 .sub ul{}
+.gnb .d1 .sub li{margin-bottom:10px;}
+.gnb .d1 .sub li a{color:#555; font-size:14px;}
+.gnb .d1 .sub li a:hover{color:#e00719;}
+
+/* 서브배경 */
+#header .subBg{width:100%; height:0; overflow:hidden; background:#fff; z-index:200;
+  border-bottom:1px solid #fff; position:absolute; top:100px; left:0;}
+
+/* 푸터 영역 */
+#footer{width:100%; height:270px; background:#101820;}
+#footer .inner{width:980px; height:100%; margin:0 auto; padding-top:59px; position:relative; box-sizing:border-box;}
+#footer .inner .flogo{position:absolute; top:59px; left:0; opacity:0.5;}
+
+#footer .inner .finfo{margin-left:249px; font-size:16px;}
+#footer .inner .finfo .fmenu li{float:left; border-right:1px solid #fff; line-height:1em; padding:0 13px; margin-bottom:20px;}
+#footer .inner .finfo .fmenu li:first-child{padding-left:0;}
+#footer .inner .finfo .fmenu li:last-child{border-right:none;}
+#footer .inner .finfo .fmenu li a{color:#fff;}
+
+#footer .inner .finfo .fdes{color:#fff; line-height:1.5em; margin-bottom:30px;}
+#footer .inner .finfo .copy{font-size:12px; color:#bbb; opacity:0.2;}
+#footer .inner .fmark{position:absolute; right:0; top:99px; opacity:0.5;}

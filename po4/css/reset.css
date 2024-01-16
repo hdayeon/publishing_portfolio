@@ -1,0 +1,24 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{margin:0; padding:0;}
+body{font-size:12px; line-height:18px; font-family:'GmarketSansMedium', 'GmarketSansBold', sans-serif;}
+ul, ol{list-style:none;}
+a{color:#111; text-decoration:none;}
+img{border:none; vertical-align:top;}
+address{font-style:normal;}
+
+.cf{}
+.cf:after{content:""; display:block; clear:both;}
+/* 공간값 인식을 변경함 (가로,세로값 안쪽으로 padding/border포함) */
+h1,h2,h3,h4,h5,h6,div,p,ul,li,ol,dl,dt,dd{box-sizing:border-box;}
